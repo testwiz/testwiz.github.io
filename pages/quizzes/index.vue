@@ -1,0 +1,3 @@
+<template>
+    <Quiz></Quiz>
+</template>
