@@ -1,28 +1,30 @@
 name: CICD
 
 on:
-  workflow_dispatch:
-  push:
-    branches: [main, website-2.0]
+    workflow_dispatch:
+    push:
+        branches: [main, website-2.0]
+
+permissions: read-all|write-all
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build:
+        runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
+        steps:
+            - uses: actions/checkout@v3
 
-      - name: Setup Node ENV
-        uses: actions/setup-node@v2.1.2
+            - name: Setup Node ENV
+              uses: actions/setup-node@v2.1.2
 
-      - name: Install Dependencies
-        run: npm install
+            - name: Install Dependencies
+              run: npm install
 
-      - name: Generate Static Site
-        run: npm run genProd
+            - name: Generate Static Site
+              run: npm run genProd
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.output/public
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./.output/public
