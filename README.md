@@ -1,42 +1,7 @@
-# Nuxt 3 Minimal Starter
+# Test Wiz Frontend
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This repository contains the frontend for the Test Wiz application. Built with Vue.js, TypeScript, SCSS, Bootstrap and Nuxt.
 
-## Setup
+# What is Test Wiz?
 
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Test Wiz is a web application that allows teachers to create and manage tests for their students. Teachers can create tests with multiple choice, true/false, and short answer questions. Students can then take these tests and see their results.
