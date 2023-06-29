@@ -1,5 +1,4 @@
-<template>
-  <hr>
+<hr>
     <footer class="text-muted">
       <div class="container">
         <p class="float-right">
@@ -9,4 +8,3 @@
         <p>New to TestWiz? <a href="/">Visit the homepage</a> or <a href="/quizzes">see our quizzes</a>.</p>
       </div>
     </footer>
-</template>
